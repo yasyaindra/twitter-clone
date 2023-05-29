@@ -10,12 +10,10 @@ const Input: React.FC<InputProps> = ({
   placeholder,
   value,
   type,
-  disabled,
   onChange,
 }) => {
   return (
     <input
-      disabled
       onChange={onChange}
       value={value}
       placeholder={placeholder}
