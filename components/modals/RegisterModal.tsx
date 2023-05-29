@@ -4,8 +4,8 @@ import useLoginModal from "@/hooks/useLoginModal";
 import { useCallback, useState } from "react";
 import { toast } from "react-hot-toast";
 import { signIn } from "next-auth/react";
-import Input from "@/pages/Input";
-import Modal from "@/pages/Modal";
+import Input from "@/components/Input";
+import Modal from "@/components/Modal";
 
 const RegisterModal = () => {
   const registerModal = useRegisterModal();
@@ -73,6 +73,7 @@ const RegisterModal = () => {
         placeholder="password"
         onChange={(e) => setPassword(e.target.value)}
         value={password}
+        type="password"
         disabled={isLoading}
       />
     </div>
